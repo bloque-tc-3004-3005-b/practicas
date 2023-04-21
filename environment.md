@@ -504,3 +504,9 @@ http://localhost:5005/
 Y verás que ambos entornos corren sin problemas, y más aún vuelve a ejecutar **npm run testFull** y ningún ambiente debe estorbarse entre sí para funcionar.
 
 No te recomiendo correr **testFull** siempre ya que cuantas más pruebas tengas más tardado se tornará, usa la configuración simple para ejecuciones continuas y el full solo en cortes de revisión del coverage específicos.
+
+Busca los recursos en las páginas oficiales de mocha, chai, sinon y nyc para aprender a usar los métodos de las pruebas.
+
+Usa también el siguiente tutorial para reforzar lo aprendido.
+
+https://blog.logrocket.com/node-js-unit-testing-mocha-chai-sinon/
