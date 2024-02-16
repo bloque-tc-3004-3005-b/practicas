@@ -2,6 +2,13 @@
 
 ![Tec de Monterrey](/images/logotecmty.png)
 
+## Comunicación para equipos de alto rendimiento
+| Material    | Tema   | Laboratorio | Recurso |
+| ----------- | -------| --------   |--------  |
+| 1           | Developing Adaptive Leaders for Turbulent Times: The Michigan Model of Leadership  | |[Artículo](/mobile/DevelopAdaptLeaders.pdf)                 | 
+| 2           | Test The Michigan Model of Leadership  | |[Web]([/mobile/DevelopAdaptLeaders.pdf](https://umich.qualtrics.com/jfe/form/SV_6ESgyFto12uEMZM))                 | 
+
+
 ## Desarrollo Web Avanzado
 | Laboratorio | Tema        | Recursos |
 | ----- | ----------- |---- |
@@ -29,15 +36,21 @@
 - Appelo, J. (2013). Cómo cambiar el mundo: Gestión del cambio 3.0. CreateSpace Independent Publishing Platform.
 - Appelo, J. (2023). Management 3.0 Practices. [Página web]. Recuperado de [https://management30.com/practice/](https://management30.com/practice/)
 
-### CMMI
+### Agile CMMI
 
 - Chrissis, M. B., Konrad, M., & Shrum, S. (2017). A Guide to Scrum and CMMI®: Improving Agile Performance with CMMI. CMMI Institute.
 
-### Ingeniería de Software
-- Richards, M. (2022). Software Architecture Patterns. O'Reilly Media.
+### Documentación de proyectos
 - Diátaxis. (2023). Diátaxis: Un marco para la documentación. [Página web]. Recuperado de https://diataxis.fr/
-- Google. (2023). Site Reliability Engineering Workbook: Practical Examples for SRE Principles and Practices. [Página web]. Recuperado de https://sre.google/workbook/table-of-contents/
+
+### Desarrollo de Sistemas
 - Adkins, H., Beyer, B., Blankinship, P., Lewandowski, P., Oprea, A., & Stubblefield, A. (2020). Building Secure & Reliable Systems: Best Practices for Designing, Implementing, and Maintaining Systems.
-- Erikson, T. (2019). Surrounded by Idiots: The Four Types of Human Behavior and How toEffectively Communicate with Each in Business (and in Life). Penguin.
-- Seidl, M., Scholz, M., Huemer, C., & Kappel, G. (2012). UML @ Classroom: An Introduction to Object-Oriented Modeling. Springer.
 - Kleppmann, M. (2017). Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems. O'Reilly Media.
+- Google. (2023). Site Reliability Engineering Workbook: Practical Examples for SRE Principles and Practices. [Página web]. Recuperado de https://sre.google/workbook/table-of-contents/
+
+### Comunicación para programadores
+- Erikson, T. (2019). Surrounded by Idiots: The Four Types of Human Behavior and How toEffectively Communicate with Each in Business (and in Life). Penguin.
+  
+### Ingeniería de Software
+- Seidl, M., Scholz, M., Huemer, C., & Kappel, G. (2012). UML @ Classroom: An Introduction to Object-Oriented Modeling. Springer.
+- Richards, M. (2022). Software Architecture Patterns. O'Reilly Media.
