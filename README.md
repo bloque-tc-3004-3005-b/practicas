@@ -12,7 +12,7 @@
 ## Bases de Datos Distribuidas
 | Material    | Tema   | Laboratorio | Recurso |
 | ----------- | -------| --------   |--------  |
-| 1           | Bases de datos distribuidas  | |[Introducción]([/mobile/labs/1_intro_kotlin.md](https://docs.google.com/presentation/d/1QB35Rx4qkUe_lWIXsfTrUqYKTEgKgZvxhMYV9V7clxc/edit?usp=sharing))                 | 
+| 1           | Bases de datos distribuidas  | |[Introducción](https://docs.google.com/presentation/d/1QB35Rx4qkUe_lWIXsfTrUqYKTEgKgZvxhMYV9V7clxc/edit?usp=sharing)                 | 
 
 ## Materiales No-SQL
 | Material    | Tema   | Laboratorio | Recurso |
