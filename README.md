@@ -6,7 +6,7 @@
 | Material    | Tema   | Laboratorio | Recurso |
 | ----------- | -------| --------   |--------  |
 | 1           | Developing Adaptive Leaders for Turbulent Times: The Michigan Model of Leadership  | |[Artículo](/mobile/DevelopAdaptLeaders.pdf)                 | 
-| 2           | Test The Michigan Model of Leadership  | |[Web]([/mobile/DevelopAdaptLeaders.pdf](https://umich.qualtrics.com/jfe/form/SV_6ESgyFto12uEMZM))                 | 
+| 2           | Test The Michigan Model of Leadership  | |[Web](https://umich.qualtrics.com/jfe/form/SV_6ESgyFto12uEMZM)                 | 
 
 
 ## Desarrollo Web Avanzado
