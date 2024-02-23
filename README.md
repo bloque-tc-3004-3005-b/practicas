@@ -5,7 +5,7 @@
 ## Comunicación para equipos de alto rendimiento
 | Material    | Tema   | Laboratorio | Recurso |
 | ----------- | -------| --------   |--------  |
-| 1           | Developing Adaptive Leaders for Turbulent Times: The Michigan Model of Leadership  | |[Artículo](/mobile/DevelopAdaptLeaders.pdf)                 | 
+| 1           | Developing Adaptive Leaders for Turbulent Times: The Michigan Model of Leadership  | |[Artículo](/DevelopAdaptLeaders.pdf)                 | 
 | 2           | Test The Michigan Model of Leadership  | |[Web](https://umich.qualtrics.com/jfe/form/SV_6ESgyFto12uEMZM)                 | 
 
 
