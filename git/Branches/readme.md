@@ -43,15 +43,15 @@ Siempre puedes crear una rama a partir de una rama existente. Habitualmente, pue
 
 Dependiendo de tu equipo puede o no ser común trabajar con los comandos de creación de ramas. Aquí veremos la forma más tradicional tomando como base que tenemos un repositorio vacío.
 
-![lab_7](/Tutorials/Lab7Branches/imgs/001.jpg)
+![lab_7](/git/Branches/imgs/001.jpg)
 
 Para ir ubicandonos, vamos a ver que el branch default para GitHub es main pero si nos acercamos al menú que aparece podremos desplegar todos los branches que tenga nuestro repositorio. Nuevamente como apenas vamos comenzando solo existe main.
 
-![lab_7](/Tutorials/Lab7Branches/imgs/002.jpg)
+![lab_7](/git/Branches/imgs/002.jpg)
 
 Ahora vamos a clonar nuestro repositorio en nuestra computadora local, elige una carpeta donde estará almacenado tu repositorio dentro de tu máquina y ejecuta el comando git clone seguido de la url del repositorio, recuerda que puedes usar https o ssh, la recomendación es que utilices ssh por facilidad y seguridad.
 
-![lab_7](/Tutorials/Lab7Branches/imgs/003.jpg)
+![lab_7](/git/Branches/imgs/003.jpg)
 
 Dentro de la consola entonces tendrías el siguiente comando
 
@@ -74,7 +74,7 @@ Receiving objects: 100% (3/3), done.
 
 Como hemos clonado la carpeta del repositorio debemos entrar a ella y nos encontraremos de lleno en nuestro repositorio.
 
-![lab_7](/Tutorials/Lab7Branches/imgs/004.jpg)
+![lab_7](/git/Branches/imgs/004.jpg)
 
 En mi caso se creo un archivo **README.md** al momento de crear el repositorio, si no lo tienes no te preocupes te invito a que lo empieces a crear en este momento.
 
@@ -114,7 +114,7 @@ El resultado debería aparecer como lo siguiente:
 
 Por un lado VSCode nos detecta que ya existen cambios dentro del archivo.
 
-![lab_7](/Tutorials/Lab7Branches/imgs/005.jpg)
+![lab_7](/git/Branches/imgs/005.jpg)
 
 ```
 On branch main
@@ -225,7 +225,7 @@ upstream, see 'push.autoSetupRemote' in 'git help config'.
 
 Esto sucede por que al haber creado el branch de **develop** lo tenemos creado solamente en nuestro repositorio local, es más si nuevamente nos vamos a github, y desplegamos la lista de branches, veremos que este aún no existe.
 
-![lab_7](/Tutorials/Lab7Branches/imgs/002.jpg)
+![lab_7](/git/Branches/imgs/002.jpg)
 
 Esto es normal y justo lo que queremos es crear de manera remota el nuevo branch, por lo que si leemos el resultado de la terminal verás que nos da el comando que necesitamos para subir nuestros cambios y crear el nuevo branch, en este caso sería:
 
@@ -252,17 +252,17 @@ branch 'develop' set up to track 'origin/develop'.
 ```
 Y sí actualizamos la página de GitHub veremos que no solo ya nos aparece **develop**, sino que además GitHub nos da una alerta que un nuevo branch fue creado.
 
-![lab_7](/Tutorials/Lab7Branches/imgs/006.jpg)
+![lab_7](/git/Branches/imgs/006.jpg)
 
 Aquí podemos podemos examinar varias cosas.
 
 Si cargo el branch de main, veré que los cambios siguen como eran inicialmente.
 
-![lab_7](/Tutorials/Lab7Branches/imgs/007.jpg)
+![lab_7](/git/Branches/imgs/007.jpg)
 
 Pero si selecciono el branch de develop veremos que tiene el contenido actualizado de nuestro archivo **README.md**. 
 
-![lab_7](/Tutorials/Lab7Branches/imgs/008.jpg)
+![lab_7](/git/Branches/imgs/008.jpg)
 
 
 Aquí esta todo el poder del control de versiones, pues pensemos un minuto lo que esto significa, **main** no se ha modificado, eso implica que si tuviera un sistema está en su versión más estable, quizás **develop**, necesite ser probado, pero eso no va a impedir que el equipo pueda bajar los cambios necesarios en sus máquinas o automatizar un set de pruebas automáticas sin comprometer la version final a los usuarios finales.
@@ -329,7 +329,7 @@ Dentro del mundo del control de versiones existen varias estrategias recomendada
 
 Este GitFlow simplificado es un mapa de como debemos trabajar en un repositorio. Esto nos da un estándar de como manejar los branches, ejecutar commits, etc.
 
-![lab_7](/Tutorials/Lab7Branches/imgs/009.png)
+![lab_7](/git/Branches/imgs/009.png)
 
 Nuevamente y haciendo incapié, recuerda que las ramas de master o main y develop no se tocan para trabajo continuo, solo para configuraciones o en su defecto no se tocan.
 
@@ -366,7 +366,7 @@ branch 'feature/contributing-standard' set up to track 'origin/feature/contribut
 
 Con esto hemos visto que no se necesitan tener cambios para crear ramas en el proyecto, procura como buena práctica crear tus ramas de trabajo antes de empezar a trabajar de manera normal.
 
-![lab_7](/Tutorials/Lab7Branches/imgs/010.jpg)
+![lab_7](/git/Branches/imgs/010.jpg)
 
 Pero, ohh no  hemos cometido un error fatal, si te diste cuenta al momento de crear el branch estabamos en el branch de **main** y no de develop, por lo que al crear nuestra nueva rama el contenido de **README.md** es el original y no contiene el cambio que realizamos.
 
@@ -413,7 +413,7 @@ git commit -m "feature: Changed title README.md and started migration to English
 git push origin
 ```
 
-![lab_7](/Tutorials/Lab7Branches/imgs/011.jpg)
+![lab_7](/git/Branches/imgs/011.jpg)
 
 Nuestra versión fue actualizada correctamente.
 
@@ -431,13 +431,13 @@ git commit -m "feature: Changed description README.md"
 git push origin
 ```
 
-![lab_7](/Tutorials/Lab7Branches/imgs/012.jpg)
+![lab_7](/git/Branches/imgs/012.jpg)
 
 Perfecto, ahora nos hicieron la solicitud de agregar un archivo **CONTRIBUTING.md** al repositorio donde vamos a establecer el estándar para este repositorio para la generación de commits y branches.
 
-Este archivo es un poco extenso pero te lo dejo [aquí](/Tutorials/Lab7Branches/CONTRIBUTING.md), utilizalo como base para el repositorio de tu equipo y futuros proyectos.
+Este archivo es un poco extenso pero te lo dejo [aquí](/git/Branches/CONTRIBUTING.md), utilizalo como base para el repositorio de tu equipo y futuros proyectos.
 
-![lab_7](/Tutorials/Lab7Branches/imgs/013.jpg)
+![lab_7](/git/Branches/imgs/013.jpg)
 
 Ya que tengo mi archivo **CONTRIBUTING.md**, nuevamente vamos a llamarlo un día, y hacemos el commit correspondiente.
 
@@ -447,7 +447,7 @@ git commit -m "feature: Added CONTRIBUTING.md with standard specification on how
 git push origin
 ```
 
-![lab_7](/Tutorials/Lab7Branches/imgs/014.jpg)
+![lab_7](/git/Branches/imgs/014.jpg)
 
 Finalmente nos hace falta agregar una cceso rápido al archivo **CONTRIBUTING.md** desde nuestro archivo **README.md**. Por lo que actualizaremos el archivo a lo siguiente:
 
@@ -475,17 +475,17 @@ git push origin
 
 Excelente, hemos finalizado nuestra iteración de trabajo.
 
-![lab_7](/Tutorials/Lab7Branches/imgs/015.jpg)
+![lab_7](/git/Branches/imgs/015.jpg)
 
 Dentro de GitHub también podremos ver que hemos realizado 6 commits desde este branch, si seleccionamos esta parte nos llevará a la siguiente vista.
 
-![lab_7](/Tutorials/Lab7Branches/imgs/016.jpg)
+![lab_7](/git/Branches/imgs/016.jpg)
 
 Aquí veremos literalmente todos los commits que hemos realizado durante el tiempo de vida a este branch.
 
 Si nos cambiamos a otro branch, por ejemplo **develop** observa que no existen estos cambios aún.
 
-![lab_7](/Tutorials/Lab7Branches/imgs/017.jpg)
+![lab_7](/git/Branches/imgs/017.jpg)
 
 Con esto ya tenemos todo listo para empezar con el último paso para poder trabajar con nuestro repositorios y equipos y es unificar el trabajo.
 
@@ -511,25 +511,25 @@ Para evitar rollos entre comandos de GitHub empezaremos a ver los Pull Request d
 
 Empecemos observando que cada vez que hacemos un commit en la rama, GitHub nos da una notificación de que un cambio se realizó y desde aquí podemos crear el Pull Request.
 
-![lab_7](/Tutorials/Lab7Branches/imgs/018.jpg)
+![lab_7](/git/Branches/imgs/018.jpg)
 
 La otra forma, es en la parte superior vienen las opciones del repositorio y una de ells es el menú de Pull Request. Si la notificación no apareciera desde aquí podemos crear un Pull Request.
 
-![lab_7](/Tutorials/Lab7Branches/imgs/019.jpg)
+![lab_7](/git/Branches/imgs/019.jpg)
 
 Como ya dijimos un Pull Request es el intento de hacer un merge entre una rama y otra. Por lo que al crear uno nuevo veremos una ventana como lo siguiente.
 
-![lab_7](/Tutorials/Lab7Branches/imgs/020.jpg)
+![lab_7](/git/Branches/imgs/020.jpg)
 
 Esto me aparece si seleccione crear el Pull Request desde el menú, si seleccionaste la notificación, puede que te precargue algunos datos, pero vamos desde el inicio.
 
 La parte más importante del Pull Request es seleccionar a donde quiero hacer el merge y desde que branch, esto lo haremos en el siguiente espacio.
 
-![lab_7](/Tutorials/Lab7Branches/imgs/021.jpg)
+![lab_7](/git/Branches/imgs/021.jpg)
 
 Aquí es muy importante que seleccionemos lo necesario ya que si nos equivocamos, GitHub pudiera encontrar conflictos entre archivos y sería forzar el cambio. Si bien 1 persona es quien escribe el Pull Request, es responsabilidad del equipo revisar que la información sea correcta.
 
-![lab_7](/Tutorials/Lab7Branches/imgs/022.jpg)
+![lab_7](/git/Branches/imgs/022.jpg)
 
 Vamos a seleccionar que vamos a mergear en **develop** nuestro branch **feature/contributing-standard**. Y observa que al seleccionarlos, nos aparece un **Able to merge**. Si se encontrarán conflictos entre los archivos puede darse a 2 razones:
 1. La versión de **feature/contributing-standard** no esta actualizada a la última versión de **develop**.
@@ -550,9 +550,9 @@ De momento no tenemos conflictos entonces daremos clic en el botón **Crear Pull
 
 Esto nos creará una vista como la siguiente:
 
-![lab_7](/Tutorials/Lab7Branches/imgs/023.jpg)
+![lab_7](/git/Branches/imgs/023.jpg)
 
-![lab_7](/Tutorials/Lab7Branches/imgs/024.jpg)
+![lab_7](/git/Branches/imgs/024.jpg)
 
 En la primera parte tenemos un espacio para describir lo que hemos realizado.
 
@@ -605,7 +605,7 @@ Not available
 
 Al finalizar actualizamos el Pull Reques y el resultado se debería ver como el siguiente:
 
-![lab_7](/Tutorials/Lab7Branches/imgs/025.jpg)
+![lab_7](/git/Branches/imgs/025.jpg)
 
 Date el tiempo para escribir pull requests, de lo contrario a tu equipo le costará trabajo entender lo que realizaste.
 
@@ -619,7 +619,7 @@ Los siguientes pasos los realizaremos en el supuesto de que somos otro miembro d
 
 Si entramos al repositorio el miembro del equipo nos debió compartir el link al Pull Request, de lo contrario podemos encontrarlo desde el menú de Pull Request, cuando hay pocos no pasa nada pero cuando hay varios es mejor que nos indiquen exactamente donde está.
 
-![lab_7](/Tutorials/Lab7Branches/imgs/026.jpg)
+![lab_7](/git/Branches/imgs/026.jpg)
 
 Al entrar veremos el detalle que ya vimos previamente,el trabajo de alguien que va a revisar el Pull Request, es ver que la información del mismo tenga sentido, se entienda la funcionalidad que se está realizando y revisar el código.
 
@@ -627,7 +627,7 @@ La primera parte vamos a asumir que es correcta, por lo que vamos a revisar el "
 
 Aquí vamos a seleccionar de las opciones en la parte superior la que dice **Files changed**.
 
-![lab_7](/Tutorials/Lab7Branches/imgs/027.jpg)
+![lab_7](/git/Branches/imgs/027.jpg)
 
 Aquí nos va a aprecer una vista mostrandonos los cambios y los archivos nuevos, y en particular veremos que aparece primero el **CONTRIBUTING.md**, la pocisión dependerá de la estructura de tu proyecto.
 
@@ -636,25 +636,25 @@ Lo ideal al revisar el código es ver cada cambio, entenderlo y en caso de que a
 En mi caso voy a ir a la línea 25 y al seleccionar veremos que puedo escribir un comentario para la persona y daremos clic en **Start Review**.
 
 
-![lab_7](/Tutorials/Lab7Branches/imgs/028.jpg)
+![lab_7](/git/Branches/imgs/028.jpg)
 
 Lo que va a suceder es que se agregará el comentario y se notificará al responsable que existe una revisión pendiente.
 
-![lab_7](/Tutorials/Lab7Branches/imgs/029.jpg)
+![lab_7](/git/Branches/imgs/029.jpg)
 
 La persona que revisa podrá decidir si revisa lo que resta del código o esperar a que se realice el cambio para hacer una nueva revisión.
 
 En micaso seguir revisando el código. Cuando finalice el archivo **CONTRIBUTING.md** puedo marcarlo como revisado.
 
-![lab_7](/Tutorials/Lab7Branches/imgs/030.jpg)
+![lab_7](/git/Branches/imgs/030.jpg)
 
 Termino la revisión y veo que no hay nada más por lo que marco ambos archivos como revisados.
 
-![lab_7](/Tutorials/Lab7Branches/imgs/031.jpg)
+![lab_7](/git/Branches/imgs/031.jpg)
 
 Ahora lo que debo hacer es terminar la revisión, en la parte superior tengo un botón que dice **Finish your review.**
 
-![lab_7](/Tutorials/Lab7Branches/imgs/032.jpg)
+![lab_7](/git/Branches/imgs/032.jpg)
 
 Aquí voy a poder agregar un comentario global a toda la revisión y voy a poder seleccionar que sigue:
 
@@ -666,23 +666,23 @@ Por default, los branches a mergear no vienen bloqueados, por lo que es posible 
 
 Como en mi ejemplo soy yo mismo no me deja ni aprobar ni solicitar cambios, así que de momento solo vamos a comentar.
 
-![lab_7](/Tutorials/Lab7Branches/imgs/033.jpg)
+![lab_7](/git/Branches/imgs/033.jpg)
 
 Damos clic en **Submit Review** y ahora volvemos cmo responsables del Pull Request.
 
 Al entrar nuevamente al Pull Request veremos que se va agregando una conversación, con todos los comentarios echos por el equipo, si necesitara realizar cambios igualmente GitHub me avisaría.
 
-![lab_7](/Tutorials/Lab7Branches/imgs/034.jpg)
+![lab_7](/git/Branches/imgs/034.jpg)
 
 Aquí nuevamente, es responsabilidad de la persona atender o no los cambios, pero la realidad es que siempre es bueno al menos contestar si no se ejecuta algún cambio y justificar el por que. Simulando la conversación entre el equipo pasaría lo siguiente.
 
-![lab_7](/Tutorials/Lab7Branches/imgs/035.jpg)
+![lab_7](/git/Branches/imgs/035.jpg)
 
 Al final terminamos la conversación con **RESOLVE CONVERSATION** y pasamos al siguiente comentario.
 
 En este Pull Request ya hemos realizado todo lo necesario, entonces como responsables del mismo podemos ir al resumen y prepararnos para el último paso hacer el merge.
 
-![lab_7](/Tutorials/Lab7Branches/imgs/036.jpg)
+![lab_7](/git/Branches/imgs/036.jpg)
 
 ## Estrategias de Merge (merge, rebase, squash+merge)
 
@@ -694,7 +694,7 @@ A nivel general las estrategias de mergeo es la forma en la que Git tratará los
 
 Vamos a ver cada estrategia en particular. Veremos que tenemos como estrategias el merge, el rebase y el squash+merge.
 
-![lab_7](/Tutorials/Lab7Branches/imgs/037.jpeg)
+![lab_7](/git/Branches/imgs/037.jpeg)
 
 - Merge - Es la más amigable de todas las estrategias, esta genera una visualización de como se unifica la rama a través de los commits sin alterar el historial de commits de la rama a fusionar.
 - Rebase - Es la más agresiva de las estrategias, aquí se empuja el historial de commits al final de la fila en la rama a fusionar, aquí se debe tener cuidado pues si no se está en la última versión se generarán conflictos importantes.
@@ -706,37 +706,37 @@ Para mi pull request yo voy a seleccionar la estrategia de merge pues prefiero m
 
 Habla con tu equipo y dfefinan que estrategia utilizarán para su proyecto.
 
-![lab_7](/Tutorials/Lab7Branches/imgs/038.jpg)
+![lab_7](/git/Branches/imgs/038.jpg)
 
 Nos aseguramos que seleccionamos la estrategia adecuada y damos clic en **Merge Pull Request**.
 
-![lab_7](/Tutorials/Lab7Branches/imgs/039.jpg)
+![lab_7](/git/Branches/imgs/039.jpg)
 
 Se nos pedirá una confirmación del merge. Y finalmente habremos terminado.
 
-![lab_7](/Tutorials/Lab7Branches/imgs/040.jpg)
+![lab_7](/git/Branches/imgs/040.jpg)
 
 Aquí recuerda lo que te dije, este branch que finalizamos es de **Trabajo** por lo que deberíamos borrar el branch.
 
-![lab_7](/Tutorials/Lab7Branches/imgs/041.jpg)
+![lab_7](/git/Branches/imgs/041.jpg)
 
 Si algo malo sucediera, nota que puedes restaurar el branch o incluso revertir el merge, ten cuidad que sea solo al momento, ya que si lo haces más adelante nuevamente puedes poner en riesto el repositorio remoto.
 
 Si regresamos a la vista principal del repositorio y seleccionamos el branch de **develop**, veremos que tenemos la última versión actualizada en el repositorio remoto.
 
-![lab_7](/Tutorials/Lab7Branches/imgs/042.jpg)
+![lab_7](/git/Branches/imgs/042.jpg)
 
 Si nos vamos a la lista de branches, veremos que nuestro branch ya no existe.
 
-![lab_7](/Tutorials/Lab7Branches/imgs/043.jpg)
+![lab_7](/git/Branches/imgs/043.jpg)
 
 Si nos vamos al menú de Pull Request y modificamos el filtro podremos ver todos los PR que han sido cerrados.
 
-![lab_7](/Tutorials/Lab7Branches/imgs/044.jpg)
+![lab_7](/git/Branches/imgs/044.jpg)
 
 Y si nos vamos al historial de commits de **develop** veremos lo siguiente.
 
-![lab_7](/Tutorials/Lab7Branches/imgs/045.jpg)
+![lab_7](/git/Branches/imgs/045.jpg)
 
 Ve como la estrategia de merge me agrega todos los commits a **develop**, esto es lo que buscamos ya que al final no tocamos **develop** y tenemos nuestra última funcionalidad añadida.
 
@@ -890,7 +890,7 @@ Para este PR, es diferente a los PR que vas a trabajar con tu equipo, pues este 
 
 Idealmente sería suficiente llenar la información con la lista de PR que incluye para que en caso de querer ver el detalle, la persona que revise entienda que incluye. No es necesario repetir información de PR  de trabajo ya cerrados.
 
-![lab_7](/Tutorials/Lab7Branches/imgs/046.jpg)
+![lab_7](/git/Branches/imgs/046.jpg)
 
 También observa que el título del PR lo modifique del default que me da como nombre del branch **develop** a **Release 0.0.1** Aquí dependerá la convención que utilizes con tu equipo pero sean descriptivos para entender mejor en el historial de commits.
 
@@ -906,13 +906,13 @@ Lo más común es que para este momento se ejecute un set de pruebas automática
 
 Nuevamente seleccionamos la estrategia de merge que queremos aplicar, en mi caso merge solamente, y aceptamos los cambios.
 
-![lab_7](/Tutorials/Lab7Branches/imgs/047.jpg)
+![lab_7](/git/Branches/imgs/047.jpg)
 
 En este caso no queremos eliminar **develop** pues seguiremos trabajando como está.
 
 Pero si regresamos a la página principal seleccionando **main** veremos:
 
-![lab_7](/Tutorials/Lab7Branches/imgs/048.jpg)
+![lab_7](/git/Branches/imgs/048.jpg)
 
 Que efectivamente main contiene la última versión.
 
@@ -986,7 +986,7 @@ Aquí en nuestra terminal se nos va a abrir una especie de editor de texto, si e
 
 En este editor agrega una pequeña descripción de que es lo que contiene la versión nueva.
 
-![lab_7](/Tutorials/Lab7Branches/imgs/049.jpg)
+![lab_7](/git/Branches/imgs/049.jpg)
 
 Por último ejecutamos el siguiente comando **git push origin v[version]** donde la versión debe coincidir con la que creamos anteriormente.
 
@@ -1007,10 +1007,10 @@ To github.com:black4ninja/git-learning-branches.git
 
 Pero lo más práctico es ir a GitHub y ver que suicedió.
 
-![lab_7](/Tutorials/Lab7Branches/imgs/050.jpg)
-![lab_7](/Tutorials/Lab7Branches/imgs/051.jpg)
-![lab_7](/Tutorials/Lab7Branches/imgs/052.jpg)
-![lab_7](/Tutorials/Lab7Branches/imgs/053.jpg)
+![lab_7](/git/Branches/imgs/050.jpg)
+![lab_7](/git/Branches/imgs/051.jpg)
+![lab_7](/git/Branches/imgs/052.jpg)
+![lab_7](/git/Branches/imgs/053.jpg)
 
 El contador de releases ha aumentado en nuestro repositorio.
 
@@ -1018,11 +1018,11 @@ Si entramos a esta sección veremos lo siguiente.
 
 Primero tendremos una lista de versiones que en nuestro caso coincide con la versión creada.
 
-![lab_7](/Tutorials/Lab7Branches/imgs/054.jpg)
+![lab_7](/git/Branches/imgs/054.jpg)
 
 Si entramos al detalle de la versión veremos entonces:
 
-![lab_7](/Tutorials/Lab7Branches/imgs/055.jpg)
+![lab_7](/git/Branches/imgs/055.jpg)
 
 Y aquí observa como todo lo que contiene nuestro repositorio fue añadido a un archivo .zip y .tar.gz, este es nuestro código integro, para que en caso de que algo malo pase en el repositorio ya tenemos una versión aislada para recuperar y subir a nuestro servidor.
 
