@@ -15,6 +15,8 @@
 |   1   | Encriptación CryptoJS |  [Laboratorio](/encriptacion.md) |
 |   2   | Archivos BucketS3 AWS |  [Laboratorio](/archivos.md) |
 |   3   | Ambientes y Pruebas Automáticas |  [Laboratorio](/environment.md) |
+|   4   | Git básico |  [Laboratorio](/git/Git/readme.md) |
+|   5   | Git destruyó mi vida (branches) |  [Laboratorio](/git/Branches/readme.md) |
 
 ## Bases de Datos Distribuidas
 | Material    | Tema   | Laboratorio | Recurso |
@@ -54,3 +56,10 @@
 ### Ingeniería de Software
 - Seidl, M., Scholz, M., Huemer, C., & Kappel, G. (2012). UML @ Classroom: An Introduction to Object-Oriented Modeling. Springer.
 - Richards, M. (2022). Software Architecture Patterns. O'Reilly Media.
+
+### Git
+- Zhiyanov, A. (n.d.). Git por ejemplo: Guía interactiva. [https://antonz.org/git-by-example/](https://antonz.org/git-by-example/)
+
+### SQL
+- Singh, N. (n.d.). DataLemur - Ace the SQL & Data Science Interview. [https://datalemur.com/](https://datalemur.com/)
+- Singh, N. (n.d.). DataLemur SQL Tutorial. [https://datalemur.com/sql-tutorial](https://datalemur.com/sql-tutorial)
